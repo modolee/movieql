@@ -1,4 +1,3 @@
 FROM node:alpine
 WORKDIR '/app'
-COPY . .
-CMD ["npm", "run", "local"]
+CMD ["yarn", "local"]

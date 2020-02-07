@@ -6,7 +6,8 @@ const resolvers = {
       movie: (_, { id }) => getById(id)
   },
   Mutation: {
-      addMovie: (_, { title, score }) => addMovie(title, score)
+      addMovie: (_, { title, score }) => addMovie(title, score),
+      deleteMovie: (_, { id }) => deleteMovie(id)
   }
 };
 
